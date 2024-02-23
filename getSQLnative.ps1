@@ -1,0 +1,1 @@
+﻿Get-WmiObject -Class Win32Reg_AddRemovePrograms -ComputerName <servername>  | where Publisher -eq "Microsoft Corporation" | select DisplayName, Version
